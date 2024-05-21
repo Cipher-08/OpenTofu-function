@@ -12,7 +12,6 @@ provider "corefunc" {
 }
 
 
-output "test" {
-  value = provider::corefunc::str_snake("Hello world!")
-  # Prints: hello_world
+output "test_with_number" {
+  value = provider::corefunc::str_camel("test with number -123.456")
 }
