@@ -12,6 +12,7 @@ provider "corefunc" {
 }
 
 
-output "aws_default_region" {
-  value = provider::corefunc::env_ensure("AWS_DEFAULT_REGION")            
+output "test" {
+  value = provider::corefunc::str_snake("Hello world!")
+  # Prints: hello_world
 }
